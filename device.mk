@@ -17,6 +17,10 @@ DEVICE_PACKAGE_OVERLAYS += \
 # PRODUCT_SHIPPING_API_LEVEL indicates the first api level, device has been commercially launched on.
 PRODUCT_SHIPPING_API_LEVEL := 27
 
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH)
